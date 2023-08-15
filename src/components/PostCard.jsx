@@ -1,6 +1,6 @@
 // Card Component
 
-function PostCard(props) {
+function Card(props) {
   return (
     <div className="container m-6">
       <a
@@ -21,4 +21,4 @@ function PostCard(props) {
   );
 }
 
-export default PostCard;
+export default Card;
