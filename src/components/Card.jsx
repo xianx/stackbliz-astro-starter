@@ -1,9 +1,5 @@
----
-import Home from '../layouts/Home.astro'
-//import Card from '../components/Card.jsx'
----
-
-<Home>
+export default function Card() {
+  return (
     <div class="container m-6">
       <a
         href="#"
@@ -17,4 +13,5 @@ import Home from '../layouts/Home.astro'
         </p>
       </a>
     </div>
-</Home>
+  );
+}
