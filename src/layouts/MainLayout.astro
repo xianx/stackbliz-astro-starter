@@ -10,9 +10,20 @@ import Header from '../components/headers/TopHeader/TopHeader.astro'
 		<title>Astro</title>
 	</head>
 	<body>
-    <Header />
-		<div class="container mx-5 mt-5">
-    	<slot />
+    
+		<Header />
+
+		<div class="flex h-full">
+				
+				<div id="side-bar" class="border border-sky-500 w-72 h-full block">
+					SideBar
+				</div>
+				
+				<main class="border border-sky-500 w-full">
+					Main
+				</main>
+
 		</div>
+	
 	</body>
 </html>
