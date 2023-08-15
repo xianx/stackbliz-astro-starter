@@ -1,4 +1,4 @@
-export default function Card() {
+function Card() {
   return (
     <div class="container m-6">
       <a
@@ -15,3 +15,5 @@ export default function Card() {
     </div>
   );
 }
+
+export default Card;
