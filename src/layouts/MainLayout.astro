@@ -1,6 +1,5 @@
 ---
-import Header from '../components/headers/TopHeader/TopHeader.astro'
-import Articles from '../components/cards/PostsCards/Cards/Articles/Articles.astro'
+	import Header from '../components/headers/TopHeader/TopHeader.astro'
 ---
 
 <html lang="en">
@@ -11,28 +10,13 @@ import Articles from '../components/cards/PostsCards/Cards/Articles/Articles.ast
 		<title>Astro</title>
 	</head>
 	<body>
-    
+
 		<Header />
 
 		<div class="flex h-full">
-				
-				<div id="side-bar-left" class="border border-sky-500 w-72 h-full block">
-					SideBar Left
-				</div>
-				
-				<main class="border border-sky-500 w-full p-5">
-					<Articles />
-					<Articles />
-					<Articles />
-					<Articles />
-					<Articles />
-				</main>
-
-				<div id="side-bar-right" class="border border-sky-500 w-72 h-full block">
-					SideBar Right
-				</div>
-
+			<slot />
 		</div>
 	
 	</body>
+
 </html>
