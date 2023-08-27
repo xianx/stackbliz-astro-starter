@@ -3,6 +3,6 @@
   import Style from '../../data/stylerules.json'
 ---
 
-<div class:list={[ 'rounded-md bg-white text-[0.8125rem] leading-5 text-slate-900 shadow-xl shadow-black/5 ring-1 ring-slate-700/10', { [Style.Padding] : !noInnerPadding }, { [Style.MarginTop] : TopMargin } ]}>
+<div class:list={[ 'rounded-3xl bg-white text-[0.8125rem] leading-5 text-slate-900 shadow-xl shadow-black/5 ring-1 ring-slate-700/10', ,'dark:bg-slate-800 dark:text-slate-400', { [Style.Padding] : !noInnerPadding }, { [Style.Margin] : TopMargin } ]}>
    <slot/>
 </div>

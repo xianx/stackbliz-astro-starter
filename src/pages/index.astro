@@ -6,11 +6,11 @@ import Button from '../components/Buttons/Button.astro'
 ---
 
 <MainLayout>
- 				<div id="side-bar-left" class="border border-sky-500 w-72 h-full block">
+ 				<div id="sidebar-left" class:list={['p-4' , 'hidden lg:flex', 'border border-sky-500 w-72' ]}>
 					SideBar Left
 				</div>
 				
-				<main class="border border-sky-500 w-full p-5">
+				<main class="border border-sky-500 flex-auto p-5">
 
           <Card>
             <CardTop />
@@ -38,7 +38,7 @@ import Button from '../components/Buttons/Button.astro'
    
 				</main>
 
-				<div id="side-bar-right" class="border border-sky-500 w-72 h-full block">
+				<div id="sidebar-right" class:list={[ 'p-4', 'hidden md:flex' , 'border border-sky-500 w-72' ]}>
 					SideBar Right
 				</div>
 </MainLayout>
